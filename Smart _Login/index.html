@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login System</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center min-vh-100">
+        <div class="register-container">
+            <h1 class="text-center mb-4">Smart Login System</h1>
+            <form>
+                <div class="mb-3">
+                    <input id="userName" type="text" class="form-control " placeholder="Enter Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input id="userEmail" type="email" class="form-control" placeholder="Enter Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <input id="userPassword" type="password" class="form-control" placeholder="Enter Your Password"
+                        required>
+                </div>
+                <button id="registerBtn" type="submit" class="btn btn-primary w-100">Sign Up</button>
+                <p id="Succeeded" class=" d-none my-2 text-capitalize text-white p-2 bg-success rounded-2">Registered
+                    Succeeded</p>
+                <p id="errorMsg" class=" d-none my-2 text-capitalize  p-2 alert alert-danger rounded-2">Email Already
+                    Existed</p>
+                <p class="my-2 text-center">Already Registered ? <a href="login.html">Login Now</a> </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
